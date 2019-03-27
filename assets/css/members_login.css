@@ -1,0 +1,231 @@
+/*dark background to support form theme*/
+
+body {
+    background-image: url("G.jpg");
+    background-repeat: no-repeat;
+    overflow: auto;
+    margin: 0;
+}
+
+
+/*sass variables used*/
+
+
+/*site container*/
+
+.form_wrapper {
+    overflow: hidden;
+    /* background: rgba(0, 0, 0, 0.7);*/
+    /*border-radius: 4px;
+     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);*/
+    padding: 20px;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    /*it can be fixed too*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*this to solve "the content will not be cut when the window is smaller than the content": */
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    overflow: visible;
+}
+.form_wrapper form{
+	display:no
+
+}
+form.active{
+	display:block;
+}
+.login,.forgot_password,.register  {
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.clear{
+	clear:both;
+}
+
+
+/*.wrapper {
+   background: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
+  padding: 90px;
+    padding-top: 40px;
+
+
+   margin: auto;
+        width: 50%;
+    width: 400px;
+ 
+
+
+}*/
+
+
+/*.wrapper {
+   background: rgba(0, 0, 0, 0.7);
+  padding: 90px;
+  max-width: 600px;
+  margin: 40px auto;
+height: 400px;
+    LLLLll
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
+     position: absolute;
+    top: 25%;
+    left: 32%;
+    margin-top: -50px;
+    margin-left: -50px;
+
+
+}*/
+
+h1 {
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+    font: 25px Oswald;
+    color: #FFF;
+    text-transform: uppercase;
+    text-shadow: #000 0px 1px 5px;
+    margin: 0px;
+}
+
+p {
+    font: 13px Open Sans;
+    color: #6E6E6E;
+    text-shadow: #000 0px 1px 5px;
+    margin-bottom: 30px;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"] {
+    width: 98%;
+    padding: 15px 0px 15px 8px;
+    border-radius: 5px;
+    box-shadow: inset 4px 6px 10px -4px rgba(0, 0, 0, 0.3), 0 1px 1px -1px rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.2);
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    text-shadow: #000 0px 1px 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1777ca), to(#1A878F));
+    background-image: -webkit-linear-gradient(#1777ca 0%, #1A878F 100%);
+    background-image: -moz-linear-gradient(#1777ca 0%, #1A878F 100%);
+    background-image: -o-linear-gradient(#1777ca 0%, #1A878F 100%);
+    background-image: linear-gradient(#1777ca 0%, #1A878F 100%);
+    font: 14px Oswald;
+    color: #FFF;
+    text-transform: uppercase;
+    text-shadow: #000 0px 1px 5px;
+    border: 1px solid #000;
+    opacity: 0.7;
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.8) !important;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.2)));
+}
+
+
+/*
+input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#28D2DE), to(#1A878F));
+  background-image: -webkit-linear-gradient(#28D2DE 0%, #1A878F 100%);
+  background-image: -moz-linear-gradient(#28D2DE 0%, #1A878F 100%);
+  background-image: -o-linear-gradient(#28D2DE 0%, #1A878F 100%);
+  background-image: linear-gradient(#28D2DE 0%, #1A878F 100%);
+  font: 14px Oswald;
+  color: #FFF;
+  text-transform: uppercase;
+  text-shadow: #000 0px 1px 5px;
+  border: 1px solid #000;
+  opacity: 0.7;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.8) !important;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.2)));
+}*/
+
+input:focus {
+    box-shadow: inset 4px 6px 10px -4px rgba(0, 0, 0, 0.7), 0 1px 1px -1px rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+    transition: 1s ease;
+}
+
+input[type="submit"]:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.password-help,
+.email-help,
+.name-help,
+.passwordc-help,
+.address-help {
+    display: none;
+    padding: 0px;
+    margin: 0px 0px 15px 0px;
+}
+
+.optimize {
+    position: fixed;
+    right: 3%;
+    top: 0px;
+}
+
+form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+    float: left;
+}
+
+form .forgotten {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+    float: right;
+}
+
+form .message a {
+    color: #1777ca;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+form .forgotten a {
+    color: #1777ca;
+    text-decoration: none;
+    opacity: 0.6;
+}
